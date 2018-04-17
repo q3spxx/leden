@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Leden</title>
+</head>
+<body>
+  <div hidden id="img-viewer">
+    <div id="img-viewer-bg" onclick="site.imgViewer.close()"></div>
+    <div id="img-viewer-wrap"  onclick="site.imgViewer.close()">
+      <img id="img-viewer-img" src="image/news-image-1.png" alt="">
+      <button id="img-viewer-close" hidden type="button" name="close" onclick="site.imgViewer.close()"></button>
+      <label id="img-viewer-close-label" for="img-viewer-close"></label>
+    </div>
+  </div>
+  <div id="main">
+    <section>
+      <div class="head-bg">
+        <div class="container">
+          <header>
+            <div class="row">
+              <div class="hidden-lg hidden-md col-xs-2">
+                <button hidden id="menu-button" onclick="site.mainMenu.open()"></button>
+                <label class="menu-button-label" for="menu-button"></label>
+              </div>
+              <div class="col-xs-5 col-md-3 col-lg-3 logo">
+                <a href="/">
+                  <img src="image/leden_logo.png" alt="leden">
+                  <span class="hidden-xs">компания<br>leden</span>
+                </a>
+              </div>
+              <nav class="hidden-xs hidden-sm col-md-7 col-lg-6 main-menu">
+                <ul>
+                  <li><a href="/">главная</a></li>
+                  <li><a href="#news">новости</a></li>
+                  <li><a href="#reviews">отзывы</a></li>
+                  <li><a href="#contacts">контакты</a></li>
+                  <li><a href="#about-us">о нас</a></li>
+                </ul>
+              </nav>
+              <div class="col-xs-5 col-md-2 col-lg-3 head-contacts">
+                <span class="head-contacts-phone">+7 (472) 666-48-37</span><br>
+                <span class="head-contacts-time-work">Пн.- пт. 9:00 - 18:00</span>
+              </div>
+            </div>
+            <div class="row main-menu-m">
+              <div class="col-xs-12">
+                <ul id="main-menu">
+                  <li><a href="/">главная</a></li>
+                  <li><a href="#news">новости</a></li>
+                  <li><a href="#reviews">отзывы</a></li>
+                  <li><a href="#contacts">контакты</a></li>
+                  <li><a href="#about-us">о нас</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="main-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 main-screen">
+              <h1>Источники света и электроустановочные изделия</h1>
+              <p>от известных производителей</p>
+              <div class="row">
+                <div class="col-xs-offset-2 col-sm-offset-5 col-md-offset-7 col-lg-offset-7 main-screen-checkboxes">
+                  <span>низкие цены</span><br>
+                  <span>огромный ассортимент</span><br>
+                  <span>квалифицированный персонал</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a name="news"></a>
+      <div class="container">
+        <h2>новости</h2>
+        <div class="row news">
+          <ul>
+            <li class="col-md-4">
+              <div class="news-img">
+                <img src="image/news-image-1.png" onclick="site.imgViewer.setImg(this.src)" alt="Новые поступления">
+              </div>
+              <h3>Новые поступления</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="/">читать дальше</a>
+            </li>
+            <li class="col-md-4">
+              <div class="news-img">
+                <img src="image/news-image-2.png" onclick="site.imgViewer.setImg(this.src)" alt="Изящность">
+              </div>
+              <h3>Изящность</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="/">читать дальше</a>
+            </li>
+            <li class="col-md-4">
+              <div class="news-img">
+                <img src="image/news-image-3.png" onclick="site.imgViewer.setImg(this.src)" alt="Освещение">
+              </div>
+              <h3>Освещение</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="/">читать дальше</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a name="reviews"></a>
+      <div class="second-bg">
+        <div class="container">
+          <h2>отзывы</h2>
+          <div class="row reviews">
+            <div class="col-lg-12">
+              <ul>
+                <li class="row">
+                  <div class="col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2 review-img">
+                    <img src="image/leo.png" alt="leo">
+                  </div>
+                  <div class="col-md-8 col-lg-7">
+                    <div class="message">
+                      <h4>Лео</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="row">
+                  <div class="col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2 review-img">
+                    <img src="image/olivia.png" alt="olivia">
+                  </div>
+                  <div class="col-md-8 col-lg-7">
+                    <div class="message">
+                      <h4>Оливия</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="row">
+                  <div class="col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2 review-img">
+                    <img src="image/vladimir.png" alt="vladimir">
+                  </div>
+                  <div class="col-md-8 col-lg-7">
+                    <div class="message">
+                      <h4>Владимир</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a name="about-us"></a>
+      <div class="about-us-bg">
+        <div class="container">
+          <h2>о нас</h2>
+          <div class="row about-us">
+            <div class="col-lg-6">
+              <div class="about-us-img-wrap">
+                <div class="about-us-img"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3>Копания LEDEN</h3>
+              <p>Компания "LEDEN" является представителем производителей источников света и электроустановочных изделий.<br><br>
+                Партнерами нашей компании являются розничные торговые точки, строительные компании, частные строительные бригады.<br><br>
+                Так же мы осуществляем поставки электротехники для собственных нужд.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section>
+        <a name="contacts"></a>
+        <div class="container">
+          <h2>контакты</h2>
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 footer-menu">
+                <ul>
+                  <li><a href="/">Главная</a></li>
+                  <li><a href="#news">Новости</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+                  <li><a href="#about-us">О нас</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <address>
+                  Белгород, Белгородская обл., 308019<br>ул. Восточная, 71-в, 7 офис, 3 этаж
+                </address>
+              </div>
+              <div class="col-xs-6 footer-contacts">
+                <p>info@leden.ru<br>support@leden.ru<br>+7 (472) 666-48-37</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="copy-right">© 2018 Все права защищены.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    function initMap() {
+      var uluru = {lat: -25.363, lng: 131.044};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHn4DAM9D1YRyXIgbz5Xr2AX7adEvWo8U&callback=initMap">
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
